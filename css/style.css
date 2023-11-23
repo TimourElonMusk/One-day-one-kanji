@@ -1,0 +1,127 @@
+* {
+  font-family: 'Nanum Brush Script';
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #F9D372;
+  padding: 5rem;
+  position: sticky;
+  position: -webkit-sticky;
+  width: 100vw;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: default;
+  font-family: 'Night in Tokyo';
+  white-space: nowrap;
+}
+
+nav {
+  position: absolute;
+  top: calc(50% + 2rem);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag {
+  display: inline-block;
+  margin: 0.2rem 0.5rem 1rem 0.5rem;
+}
+
+.flag a {
+  display: block;
+}
+
+.flag img {
+  width: 2.5rem;
+  border-radius: 0.4rem;
+  display: block;
+}
+
+.flag--grey {
+  filter: grayscale(100%) brightness(130%);
+}
+
+#timer-text {
+  font-size: 1.75rem;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+#daily-kanji__image {
+  display: inline-block;
+}
+
+#daily-kanji__image h2 {
+  font-size: 5rem;
+  margin-bottom: -1rem;
+}
+
+#daily-kanji {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#daily-kanji__image a {
+  display: block;
+}
+
+#daily-kanji__image img {
+  border: 0.1rem solid black;
+  display: block;
+  width: 100%;
+}
+
+#daily-kanji__image figcaption {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#daily-kanji__image figcaption ul {
+  padding-left: 0;
+  margin-left: 0.5rem;
+}
+
+#daily-kanji__image figcaption ul li {
+  text-align: left;
+  list-style-position: inside;
+}
+
+#daily-kanji__kanji__readings ul li {
+  text-align: left;
+}
+
+
+@font-face {
+  font-family: 'Night in Tokyo';
+  src: url('/assets/fonts/night-in-tokyo.regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Night in Tokyo';
+  src: url('/assets/fonts/night-in-tokyo.bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Nanum Brush Script';
+  src: url('/assets/fonts/NanumBrushScript-Regular.ttf');
+}

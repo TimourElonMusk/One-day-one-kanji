@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Every day, a new kanji is displayed on the site. Learn one new kanji per day!" />
+    <meta name="keywords" content="kanji, hanzi, han, kun, japan, china, japanese, chinese, learn" />
+    <title>One day, one kanji !</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reponsive.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ff0000" />
+    <meta name="msapplication-config" content="/assets/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+</head>
+
+<body>
+    <header>
+        <h1>ONE DAY, ONE KANJI!</h1>
+        <nav>
+            <ul>
+                <li class="flag"><a href="jp.html">
+                    <img src="assets/img/japan_flag.png" alt="Japan" title="Japanese (日本語)"/>
+                </a></li>
+
+                <li class="flag" title="COMING SOON!">
+                    <img src="assets/img/china_flag.png" alt="China" class="flag--grey" />
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <p id="timer-text">New kanji in <span id="timer">00:00:00</span></p>
+        
+    <main>
+        <div id="daily-kanji">
+            <div id="daily-kanji__image">
+                <h2>Child</h2>
+                <figure>
+                    <a href="https://fr.wiktionary.org/wiki/%E5%AD%90" target="_blank"><img src="assets/img/ko_kanji.gif" alt="Daily Kanji" /></a>
+                    <figcaption>
+                        <ul>
+                            <li>On’yomi : シ (shi), ス (su), ツ (tsu)</li>
+                            <li>Kun’yomi : こ (ko), ね (ne)</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    
+    
+    
+    <script src="js/timer.js"></script>
+</body>
+
+</html>

@@ -19,4 +19,8 @@
   .flag img {
     width: 9.25vw;
   }
+
+  .flag:not(:last-child) {
+    margin-right: 3vw;
+  }
 }

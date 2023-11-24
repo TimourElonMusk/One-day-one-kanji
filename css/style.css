@@ -1,6 +1,7 @@
 * {
   font-family: 'Nanum Brush Script';
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -40,11 +41,15 @@ nav ul {
 
 .flag {
   display: inline-block;
-  margin: 0.2rem 0.5rem 1rem 0.5rem;
+}
+
+.flag:not(:last-child) {
+  margin-right: 0.75rem;
 }
 
 .flag a {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .flag img {
@@ -53,7 +58,11 @@ nav ul {
   display: block;
 }
 
-.flag--grey {
+.flag--active img {
+  width: 3rem;
+}
+
+.flag--coming-soon img {
   filter: grayscale(100%) brightness(130%);
 }
 
@@ -64,7 +73,10 @@ nav ul {
 }
 
 #daily-kanji__image {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #daily-kanji__image h2 {
@@ -76,7 +88,7 @@ nav ul {
   text-align: center;
   align-items: center;
   justify-content: center;
-  align-items: center;
+  display: flex;
 }
 
 #daily-kanji__image a {
@@ -106,6 +118,16 @@ nav ul {
 
 #daily-kanji__kanji__readings ul li {
   text-align: left;
+}
+
+#daily-kanji__stroke-order {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#daily-kanji__stroke-order img {
+  width: 15rem;
 }
 
 
